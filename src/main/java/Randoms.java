@@ -33,8 +33,8 @@ public class Randoms implements Iterable<Integer> {
 
             @Override
             public Integer next() {
-                int randomIndex = random.nextInt(randomMass.length);
-                return randomMass[randomIndex];
+                index = random.nextInt(randomMass.length);
+                return randomMass[index];
             }
         };
     }
